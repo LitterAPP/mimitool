@@ -1,0 +1,84 @@
+.joke-container{
+    font-size: 28rpx;
+}
+.hidden{
+    display:none;
+}
+.nav-tab{
+    display:flex;     
+    flex-direction: row;
+    width: 100%;
+    height: 100rpx;
+    border-bottom: 1rpx solid  beige;
+    border-top: 1rpx solid  beige;
+}
+.tab-default:last-child{
+     border-right:0px solid gainsboro;
+}
+.tab-default{
+    line-height:100rpx;
+    text-align:center;
+    flex: 1;
+    border-right:1px solid gainsboro;
+    color:#2c2c2c;
+    font-weight:bold;
+    font-size:28rpx;
+    background-image:url('data:image/png;base64,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');
+    background-repeat: no-repeat;
+    background-size: 48rpx 48rpx;
+    background-position-y: center;
+    background-position-x:100rpx;
+}
+
+
+.tab-selected{
+    line-height:100rpx;
+    text-align:center;
+    flex: 1;
+    border-right:1px solid gainsboro;
+    color:#1296db;
+    font-weight:bold;
+    font-size:28rpx;
+    background-image:url('data:image/png;base64,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');
+    background-repeat: no-repeat;
+    background-size: 48rpx 48rpx;
+    background-position-y: center;
+    background-position-x:100rpx;
+}
+.joke-txt-container{
+    height: 200px;
+}
+.joke-txt-item{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 20rpx 20rpx;    
+}
+
+.joke-txt-item:nth-child(2n+0){
+    border-top: 1rpx solid  gainsboro; 
+}
+
+
+.joke-txt-item text{
+
+    font-size: 28rpx;
+    color:  #2c2c2c;
+}
+
+.joke-pic-item{
+    display: flex;
+    flex: 1;
+    flex-direction: column;   
+    align-items: center;  
+}
+.joke-pic-item:nth-child(2n+0){
+    border-top: 1rpx solid  gainsboro; 
+}
+.joke-pic-item text{
+    padding: 10rpx;
+    background-color: lemonchiffon;
+    border-radius: 10rpx;
+    font-size: 35rpx;
+    color:  #2c2c2c;
+}

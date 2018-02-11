@@ -1,0 +1,19 @@
+<view class="dream-container">
+    <form bindsubmit="queryDreamFormSumbit">    
+      <view class="dream-input-wrap">             
+            <input focus="true" class="dream-keyword-input" name="dreamKeyword" placeholder="请输入梦见了什么" />
+        </view>
+        <view >
+            <button class="open-dream-btn" formType="submit">问问周公何解</button>
+        </view>
+    </form> 
+</view>
+
+<view class="dream-result-container">
+ <view class="dreamResult" wx:for="{{dreamResult.result}}" wx:key="id">
+        <view class="dereamTitle">
+            <text>{{item.title}}</text>
+        </view>
+        <view class="dreamDes">{{item.des}}</view>         
+    </view>
+</view>

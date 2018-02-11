@@ -1,0 +1,13 @@
+<view class="nine-box-container">
+  <view class="nine-box-warp">
+    <view bindtap="bindDreamTap" class="nine-box-1">
+      <view class="nine-box-icon">
+        <image src="/images/nine-bg-dream.png"></image>
+      </view>
+      <text>周公解梦</text>
+    </view>
+    <view class="nine-box-2">功能2</view>
+    <view class="nine-box-3">功能3</view>
+    <view class="nine-box-4">功能4</view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<view class="joke-container" 
+bindtouchstart="jokeContainerTouchStart"
+bindtouchmove="jokeContainerTouchMove">
+    <view class="{{onPullDownRefresh?'hidden':'nav-tab'}}">
+        <view bindtap="tab_joke_txt" class="{{tab_joke_txt_selected?'tab-selected':'tab-default'}}">短笑话</view>
+        <view bindtap="tab_joke_pic" class="{{tab_joke_pic_selected?'tab-selected':'tab-default'}}">趣图</view>
+    </view>
+    <view class="{{tab_joke_txt_selected?'joke-txt-container':'hidden'}}">
+      <view wx:for="{{jokeTxtResultList}}" wx:key="hashId" class="joke-txt-item">
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+    <view class="{{tab_joke_pic_selected?'joke-pic-container':'hidden'}}">
+    <view wx:for="{{jokePicResultList}}" wx:key="hashId" class="joke-pic-item">
+        <text>{{item.content}}</text>
+        <image src="{{item.url}}"></image>
+      </view>
+    </view>
+</view>

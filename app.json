@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/joke/joke", 
+    "pages/qq/qq",
+    "pages/dream/dream",    
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "生活小工具",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor":"#1296db",
+    "list": [{
+      "iconPath":"images/bar-dream-unselect.png",
+      "selectedIconPath":"images/bar-dream-select.png",
+      "pagePath": "pages/dream/dream",
+      "text": "周公解梦"       
+    }
+    , {
+       "iconPath":"images/bar-qq-jx-unselect.png",
+      "selectedIconPath":"images/bar-qq-jx-select.png",
+      "pagePath": "pages/qq/qq",
+      "text": "QQ吉凶"
+    }
+      , {
+       "iconPath":"images/bar-xh-unselect.png",
+      "selectedIconPath":"images/bar-xh-select.png",
+      "pagePath": "pages/joke/joke",
+      "text": "乐一乐"
+    }
+    ]
+  }
+
+}
+
+

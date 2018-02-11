@@ -1,0 +1,33 @@
+.nine-box-container{
+  padding-top: 10rpx;
+}
+.nine-box-warp{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+
+}
+.nine-box-warp image{
+  height: 64rpx;
+  width: 64rpx;
+  border: 2rpx solid #1296db;
+  border-radius: 50rpx;
+  padding: 15rpx;
+}
+.nine-box-warp text{
+  font-size: 11px;
+  color: #666;
+  padding: 0 0 0 0 ;
+}
+
+.nine-box-1,.nine-box-2,.nine-box-3,.nine-box-4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+}
+.nine-box-icon{
+  display: flex;
+  height: 100rpx;
+  align-items: center;  
+}
